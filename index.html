@@ -5,45 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>王正春的官网</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .bkg {
+            background-color: #eee;
+        }
+
+        .mgt2 {
+            margin: 3px;
+        }
+    </style>
 </head>
 
-<body>
-    <div style="
-    text-align: center;
-    background-color: #f1f1f1;
-    padding: 20px;">
-        <img src="./wang's photo.png" alt="王正春的照片" height="100">
+<body class="flex column">
+
+    <!-- 投部栏 -->
+    <div style="justify-content: center;align-items: center; flex: 1;" class="flex bkg">
+        <img src="./wang's photo.png" alt="王正春照片" width="100px" height="100px">
     </div>
 
-    <div style="
-    text-align: center;
-    line-height: 2;
-    font-size: x-large;
-    padding: 30px;">
-        <p>Hi，我是<span style="font-size: 35px;color: rgb(0, 149, 255);">王正春</span>，
-            <br>建筑行业从业十五年，国家一级注册建筑师。
-            <br>现致力于
-            <span style="font-size: 35px;color: rgb(0, 149, 255);">
-                大众家装全过程C2C互联网科技平台
-            </span>
-            创业，
-            <br>跳出装修公司及整装模式，业主及各服务方直连，
-            <br>完成自装全流程决策控制落地，实现可控可靠省钱高质量自装。
-            <br><span style="font-size: 35px;color: rgb(0, 149, 255);">
-                现征求专业投资者、公众投资者、程序开发及装修工程技术人员加入！</span>
-        </p>
+    <!-- 文字栏 -->
+    <div style="font-size: 20px;justify-content: center; align-items: center;flex: 4;" class="flex column">
+        <div class="mgt2">Hi，我是<span style="font-size: 25px;color: rgb(0, 149, 255);">
+                王正春</span>，</div>
+        <div class="mgt2">建筑行业从业十五年，国家一级注册建筑师。</div>
+        <div>现致力于<span style="font-size: 25px;color: rgb(0, 149, 255);">
+                大众家装全过程C2C互联网科技平台</span>创业，</div>
+        <div class="mgt2">跳出装修公司及整装模式，业主及各服务方直连，</div>
+        <div class="mgt2">完成自装全流程决策控制落地，实现可控可靠省钱高质量自装。</div>
+        <div class="mgt2"><span style="font-size: 25px;color: rgb(0, 149, 255);">
+                现征求专业或公众投资者、程序开发及装修工程技术人员加入！</span></div>
+
     </div>
 
-    <div style="
-    text-align: center;
-    background-color: #f1f1f1;
-    line-height: 0.5;
-    padding-top: 5px;
-    padding-bottom: 20px;">
-        <p>欢迎交流</p>
-        <p>电话（微信）：15026768623邮箱：309958763@qq.com</p>
-        <p>邮箱：309958763@qq.com</p>
-        <a href="">平台开发中，敬请期待</a>
+    <!-- 底部栏 -->
+    <div style="flex: 1;justify-content: center;align-items: center;" class="flex column bkg">
+        <div>欢迎交流</div>
+        <div>电话（微信）：15026768623</div>
+        <div>邮箱：309958763@qq.com</div>
+        <div><a href="">平台开发中，敬请期待</a></div>
     </div>
 </body>
 
